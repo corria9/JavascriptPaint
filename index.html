@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Paint App</title>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+
+  <script src="main.js" type="text/javascript"></script>
+
+</head>
+
+
+
+<body>
+
+
+
+  <div class="toolbox left">
+    <div class="group commands">
+      <div class="item" data-command="undo" title="Undo">
+        <ion-icon name="arrow-undo-outline"></ion-icon>
+      </div>
+
+      <div class="item" data-command="dowload" title="Dowload">
+        <ion-icon name="download-outline"></ion-icon>
+      </div>
+
+      
+    </div>
+    <div class="group shapes">
+
+      <div class="item active" data-tool="line" title="Line Tool">
+        <ion-icon name="remove-circle-outline"></ion-icon>
+      </div>
+
+      <div class="item" data-tool="rectangle" title="Rectangle Tool">
+        <ion-icon name="stop-circle-outline"></ion-icon>
+      </div>
+
+      <div class="item" data-tool="circle" title="Circle Tool">
+        <ion-icon name="sync-circle-outline"></ion-icon>
+      </div>
+
+      <div class="item" data-tool="triangle" title="Triangle">
+        <ion-icon name="caret-up-circle-outline"></ion-icon>
+      </div>
+      
+    </div>
+    <div class="group tools">
+      <div class="item active" data-tool="pencil" title="Pencil Tool">
+        <ion-icon name="pencil-outline"></ion-icon>
+      </div>
+
+      <div class="item" data-tool="brush" title="Brush Tool">
+        <ion-icon name="brush-outline"></ion-icon>
+      </div>
+
+      <div class="item" data-tool="paint-bucket" title="Paint Bucket Tool">
+        <ion-icon name="color-palette-outline"></ion-icon>
+      </div>
+
+      <div class="item" data-tool="eraser" title="Eraser Tool">
+        <ion-icon name="trash-outline"></ion-icon>
+      </div>
+      
+    </div>
+
+
+    <div class="group linewidths">
+
+      <div class="item active" data-line-width="1" title="1 Pixel">
+        <div class="linewidth" style="width: 1px; height: 1px;background-color: white; margin: 9px;"></div>
+      </div>  
+
+      <div class="item" data-line-width="2" title="2 Pixel">
+        <div class="linewidth" style="width: 2px; height: 2px;background-color: white; margin: 9px;"></div>
+      </div>
+
+      <div class="item" data-line-width="3" title="3 Pixel">
+        <div class="linewidth" style="width: 3px; height: 3px;background-color: white; margin: 9px;"></div>
+      </div>
+
+      <div class="item" data-line-width="4" title="4 Pixel">
+        <div class="linewidth" style="width: 4px; height: 4px;background-color: white;margin: 9px;"></div>
+      </div>
+
+      <div class="item" data-line-width="5" title="5 Pixel">
+        <div class="linewidth" style="width: 5px; height: 5px;background-color: white; margin: 9px;"></div>
+      </div>
+
+
+    </div>
+
+  </div>
+
+    <canvas id="canvas" width="720" height="480"></canvas>
+
+
+
+    <div class="toolbox right">
+
+      <div class="group swatches">
+      
+
+        <div class="item" data-color="#ffffff">
+          <div class="swatch" style="background-color: #ffffff;"></div>
+        </div>
+
+        <div class="item" data-color="#ffffff">
+          <div class="swatch" style="background-color: #000000;"></div>
+        </div>
+
+        <div class="item" data-color="#ffffff">
+          <div class="swatch" style="background-color: #ff0000;"></div>
+        </div>
+
+        <div class="item" data-color="#ffffff">
+          <div class="swatch" style="background-color: #00ff00;"></div>
+        </div>
+
+        <div class="item" data-color="#ffffff">
+          <div class="swatch" style="background-color: #0000ff;"></div>
+        </div>
+
+        <div class="item" data-color="#ffffff">
+          <div class="swatch" style="background-color: #00ffff;"></div>
+        </div>
+
+
+        <div class="item" data-color="#ffffff">
+          <div class="swatch" style="background-color: #ffff4d;"></div>
+        </div>
+
+        <div class="item" data-color="#ffffff">
+          <div class="swatch" style="background-color: #ff9900;"></div>
+        </div>
+
+        <div class="item" data-color="#ffffff">
+          <div class="swatch" style="background-color: #ff3300;"></div>
+        </div>
+
+        <div class="item" data-color="#ffffff">
+          <div class="swatch" style="background-color: #990033;"></div>
+        </div>
+
+        <div class="item" data-color="#ffffff">
+          <div class="swatch" style="background-color: #cc66ff;"></div>
+        </div>
+
+        <div class="item" data-color="#ffffff">
+          <div class="swatch" style="background-color: #99ccff;"></div>
+        </div>
+
+        <div class="item" data-color="#ffffff">
+          <div class="swatch" style="background-color: #0099cc;"></div>
+        </div>
+
+        <div class="item" data-color="#ffffff">
+          <div class="swatch" style="background-color: #003399;"></div>
+        </div>
+
+        <div class="item" data-color="#ffffff">
+          <div class="swatch" style="background-color: #000066;"></div>
+        </div>
+
+
+
+
+      </div>
+  
+    </div>
+
+
+
+  <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+</body>
+</html>
