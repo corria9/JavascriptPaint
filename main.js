@@ -1,5 +1,5 @@
 
-document.querySelectorAll("[data-command").forEach(
+document.querySelectorAll("[data-command]").forEach(
     item => {
       item.addEeventListener("click", e =>{
 
